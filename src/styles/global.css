@@ -1,0 +1,66 @@
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+    body{
+        @apply bg-slate-400 overflow-hidden 
+          
+    }
+}
+
+@layer components {
+
+    .icon{
+        @apply md:inline-block  hidden
+    }
+    .user{
+        @apply inline-block
+    }
+    #navbar{
+        @apply md:flex md:space-x-6 md:justify-end md:flex-auto
+        md:border-none md:top-0 md:right-0  md:shadow-none md:rounded-none md:bg-transparent
+    }
+
+    #navbar-active{
+        @apply right-0 
+    }
+.navBtm{
+@apply  h-6 sm:md:inline-flex cursor-pointer text-sm pt-1   mb-6 border-stone-400 lg:text-lg text-gray-200 hover:scale-125 transition-all duration-150 ease-out hover:no-underline hover:text-gray-300
+md:space-x-8
+}
+.icon{
+@apply  w-5 h-5 right-80 mr-1 mt-0.5 
+}
+.header{ 
+@apply  p-6 bg-slate-500 mx-0  xl:mx-auto max-w-full
+}
+.content{
+@apply md:p-10 md:m-10 p-6 m-0  bg-slate-300 rounded-3xl  
+}
+.content h1{
+@apply flex md:text-xl font-extrabold max-w-md text-lg
+}
+.content h2{
+@apply flex md:text-2xl font-bold text-lg max-w-md 
+}
+.content h3{
+@apply flex md:text-2xl font-semibold max-w-md text-xl
+}
+.footer{
+@apply flex bg-slate-500 p-3 mb-0 sticky  align-bottom
+}
+.content p{ 
+@apply mr-5 flex text-justify max-w-4xl md:block 
+}
+.carousel-inner {
+@apply flex
+}
+.nav{
+    @apply space-x-6
+}
+}
