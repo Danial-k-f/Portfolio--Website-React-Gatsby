@@ -1,4 +1,5 @@
 {
+  "homepage":"http://danial-k-f.github.io/Portfolio--Website-React-Gatsby",
   "name": "my-first-gatsby",
   "version": "1.0.0",
   "private": true,
@@ -9,6 +10,8 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
+    "predeploy" : "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
